@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transfer Amount</title>
+</head>
+<body>
+    <h1>Transfer Amount</h1>
+    <form method="POST" action="{{ url_for('transfer') }}">
+        <label>From Account ID:</label>
+        <input type="text" name="from_account_id" required><br>
+        <label>To Account ID:</label>
+        <input type="text" name="to_account_id" required><br>
+        <label>Amount:</label>
+        <input type="text" name="amount" required><br>
+        <button type="submit">Transfer</button>
+    </form>
+</body>
+</html>

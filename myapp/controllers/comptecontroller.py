@@ -1,6 +1,7 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 from services.compteservice import CompteService
 
+
 compte_blueprint = Blueprint('compte', __name__)
 
 @compte_blueprint.route('/accounts')
